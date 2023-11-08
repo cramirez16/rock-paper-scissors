@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 16px 0px;
+  background: black;
+}
+.title {
+  font-family: "Sprinkled", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: rgb(230, 214, 187);
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 100%;
+  text-align: center;
+  color: rgb(190, 178, 157);
+  background: rgb(30, 30, 30);
+  padding: 0;
+  margin: 0;
+  padding-bottom: 32px;
+}
+.score-banner {
+  margin: 32px 0px;
+}
+.score-info {
+  font-size: 54px;
+  padding: 0;
+  margin: 0px 0px 16px 0px;
+}
+
+.score-message {
+  font-size: 44px;
+  padding: 0;
+  margin: 0;
+}
+
+.scores-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.score-box {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.round {
+  font-size: 50px;
+}
+
+.score {
+  font-size: 25px;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  border: solid 3px rgb(209, 195, 174);
+  border-radius: 5px;
+  padding: 10px 0px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+button {
+  background: rgba(166, 155, 137, 0.9);
+  width: 120px;
+  height: 120px;
+  border: solid 3px rgb(208, 195, 174);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: rgb(179, 158, 130);
+}
+
+.btn:active {
+  background: rgb(193, 159, 110);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  color: rgb(230, 214, 187);
+  background: black;
+  font-size: 20px;
+  margin: 0;
+}
+
+.fa-github {
+  color: rgb(230, 214, 187);
+  font-size: 28px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotateY(360deg) scale(1);
+}
