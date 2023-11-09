@@ -56,6 +56,24 @@ function updateScreen(userPlay, computerPlay, round) {
   scoreBoxComputer.score.textContent = `Computer: ${computerPoints}`;
 }
 
+function updateFooter() {
+  const footer = document.querySelector("footer");
+  const paragraph = document.createElement("p");
+  paragraph.textContent = `Copyright © ${new Date().getFullYear()} cramirez`;
+
+  const anchor = document.createElement("a");
+  anchor.setAttribute("href", "https://github.com/cramirez16");
+  anchor.setAttribute("target", "_blank");
+
+  const githubIcon = document.createElement("i");
+  githubIcon.setAttribute("class", "fab fa-github");
+  githubIcon.setAttribute("aria-hidden", "true");
+
+  anchor.appendChild(githubIcon);
+  footer.appendChild(paragraph);
+  footer.appendChild(anchor);
+}
+
 let computerPoints = 0;
 let userPoints = 0;
 let round;
@@ -105,6 +123,7 @@ const buttonsCallBack = (e) => {
 };
 
 function game() {
+  updateFooter();
   buttons.addEventListener("click", buttonsCallBack);
 }
 
